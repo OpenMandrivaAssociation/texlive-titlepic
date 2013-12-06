@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-titlepic
 Version:	1.1
-Release:	5
+Release:	6
 Summary:	Add picture to title page of a document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlepic
