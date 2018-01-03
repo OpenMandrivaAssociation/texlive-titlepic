@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/titlepic
-# catalog-date 2009-11-10 08:50:14 +0100
-# catalog-license pd
-# catalog-version 1.1
 Name:		texlive-titlepic
-Version:	1.1
-Release:	10
+Version:	1.2
+Release:	1
 Summary:	Add picture to title page of a document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlepic
@@ -36,10 +30,8 @@ report and book.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/titlepic/titlepic.sty
-%doc %{_texmfdistdir}/doc/latex/titlepic/README
-%doc %{_texmfdistdir}/doc/latex/titlepic/titlepic-manual.pdf
-%doc %{_texmfdistdir}/doc/latex/titlepic/titlepic-manual.tex
+%{_texmfdistdir}/tex/latex/titlepic
+%doc %{_texmfdistdir}/doc/latex/titlepic
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,16 +42,3 @@ report and book.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 756922
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 719755
-- texlive-titlepic
-- texlive-titlepic
-- texlive-titlepic
-
