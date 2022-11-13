@@ -1,12 +1,12 @@
 Name:		texlive-titlepic
-Version:	1.2
-Release:	2
+Version:	43497
+Release:	1
 Summary:	Add picture to title page of a document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlepic
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlepic.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlepic.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlepic.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlepic.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,12 +21,12 @@ package currently only works with the document classes article,
 report and book.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -35,7 +35,7 @@ report and book.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
