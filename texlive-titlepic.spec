@@ -3,7 +3,7 @@ Version:	43497
 Release:	2
 Summary:	Add picture to title page of a document
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlepic
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/titlepic
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlepic.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlepic.doc.r%{version}.tar.xz
